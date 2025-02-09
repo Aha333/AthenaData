@@ -2,31 +2,28 @@ ds_techniques/
 ├── .gitignore
 ├── README.md
 ├── requirements.txt
-├── data/
-│   ├── raw/
-│   └── processed/
 ├── notebooks/
 │   ├── 01_statistics/
+│   │   ├── data/
 │   │   ├── ab_testing.ipynb
-│   │   └── hypothesis_testing.ipynb
+│   │   ├── hypothesis_testing.ipynb
+│   │   └── utils/
+│   │       └── stats_helper.py
 │   ├── 02_causal_inference/
+│   │   ├── data/
 │   │   ├── propensity_score_matching.ipynb
-│   │   └── difference_in_differences.ipynb
+│   │   ├── difference_in_differences.ipynb
+│   │   └── utils/
+│   │       └── causal_helper.py
 │   ├── 03_machine_learning/
+│   │   ├── data/
 │   │   ├── supervised_learning.ipynb
-│   │   └── model_evaluation.ipynb
+│   │   ├── model_evaluation.ipynb
+│   │   └── utils/
+│   │       └── ml_helper.py
 │   └── 04_recommender_systems/
+│       ├── data/
 │       ├── collaborative_filtering.ipynb
-│       └── content_based.ipynb
-├── src/
-│   ├── __init__.py
-│   ├── data/
-│   │   └── data_processing.py
-│   ├── features/
-│   │   └── feature_engineering.py
-│   ├── models/
-│   │   └── model_utils.py
-│   └── visualization/
-│       └── plotting.py
-└── tests/
-    └── __init__.py 
+│       ├── content_based.ipynb
+│       └── utils/
+│           └── recsys_helper.py

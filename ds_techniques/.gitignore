@@ -1,0 +1,26 @@
+# Remove existing .DS_Store files from Git's index
+git rm --cached .DS_Store
+git rm --cached **/.DS_Store
+
+# Jupyter
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+.venv/
+env/
+.env/
+
+# Data files (if you want to exclude them)
+notebooks/*/data/*
+!notebooks/*/data/.gitkeep
+
+# IDE
+.vscode/
+.idea/ 
