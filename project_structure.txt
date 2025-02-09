@@ -2,28 +2,31 @@ ds_techniques/
 ├── .gitignore
 ├── README.md
 ├── requirements.txt
-├── notebooks/
-│   ├── 01_statistics/
-│   │   ├── data/
-│   │   ├── ab_testing.ipynb
-│   │   ├── hypothesis_testing.ipynb
-│   │   └── utils/
-│   │       └── stats_helper.py
-│   ├── 02_causal_inference/
-│   │   ├── data/
-│   │   ├── propensity_score_matching.ipynb
-│   │   ├── difference_in_differences.ipynb
-│   │   └── utils/
-│   │       └── causal_helper.py
-│   ├── 03_machine_learning/
-│   │   ├── data/
-│   │   ├── supervised_learning.ipynb
-│   │   ├── model_evaluation.ipynb
-│   │   └── utils/
-│   │       └── ml_helper.py
-│   └── 04_recommender_systems/
-│       ├── data/
-│       ├── collaborative_filtering.ipynb
-│       ├── content_based.ipynb
-│       └── utils/
-│           └── recsys_helper.py
+├── setup.py
+└── notebooks/
+    ├── topic_01_statistics/
+    │   ├── data/
+    │   │   ├── __init__.py
+    │   │   └── gen_sample_ab.py
+    │   ├── utils/
+    │   │   └── stats_helper.py
+    │   ├── ab_testing.ipynb
+    │   └── hypothesis_testing.ipynb
+    ├── topic_02_causal_inference/
+    │   ├── data/
+    │   ├── utils/
+    │   │   └── causal_helper.py
+    │   ├── propensity_score_matching.ipynb
+    │   └── difference_in_differences.ipynb
+    ├── topic_03_machine_learning/
+    │   ├── data/
+    │   ├── utils/
+    │   │   └── ml_helper.py
+    │   ├── supervised_learning.ipynb
+    │   └── model_evaluation.ipynb
+    └── topic_04_recommender_systems/
+        ├── data/
+        ├── utils/
+        │   └── recsys_helper.py
+        ├── collaborative_filtering.ipynb
+        └── content_based.ipynb
