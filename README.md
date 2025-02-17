@@ -42,6 +42,10 @@ The project is organized into several key areas:
 
 3. Run notebooks
 
+## java
+- java version matters. for pyspark , currently only support java 11, but not java 23.
+- 
+
 ## Contributing
 
 We welcome contributions! Please open an issue or submit a pull request for any improvements or new techniques.
