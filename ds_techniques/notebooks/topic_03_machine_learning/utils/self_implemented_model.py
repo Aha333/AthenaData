@@ -1,4 +1,15 @@
 
+"""
+# 参数个数估计 - tree model 一共fit了几个参数
+* 1. 可以看到decision tree的一种表示方法就是下面的这样， dictionary的嵌套。
+* 2. 一个node要么是只有value key， 说明是最后的子节点
+* 3. 要么有4个key： feature， threshould， left node ， right(node). 
+* 所以参数的数量是 2～3个， 如果有 3层 ， 就是最多 1+2+4 个node， 最多 3*7个参数。
+
+# 另外很有意思的是 这里grow tree是recursive的， inference也是recursive的 （不知道有没有别的更快速的方式）
+# random forecast 的每一个tree还存储的feature list。 是 （tree， feature list）pair
+
+"""
 import numpy as np
 from joblib import Parallel, delayed
 from sklearn.base import BaseEstimator, RegressorMixin
